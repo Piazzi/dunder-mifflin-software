@@ -14,10 +14,10 @@ class AlterUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->string('cpf', 15);
-            $table->date('data_de_nascimento');
-            $table->float('salario');
-            $table->string('endereco', 150);
+            $table->string('cpf', 15)->nullable();
+            $table->date('data_de_nascimento')->nullable();
+            $table->float('salario')->nullable();
+            $table->string('endereco', 150)->nullable();
 
 
         });

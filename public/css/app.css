@@ -2677,13 +2677,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-  color: #3490dc;
-  border-color: #3490dc;
+  color: #275D8C;
+  border-color: #275D8C;
 }
 .btn-outline-primary:hover {
   color: #fff;
-  background-color: #3490dc;
-  border-color: #3490dc;
+  background-color: #275D8C;
+  border-color: #275D8C;
 }
 .btn-outline-primary:focus, .btn-outline-primary.focus {
   box-shadow: 0 0 0 0.2rem rgba(52, 144, 220, 0.5);
@@ -10003,7 +10003,7 @@ h3 {
   }
 }
 
-svg {
+nav svg {
   color: #275D8C;
 }
 
@@ -10014,3 +10014,4 @@ svg {
   width: 48px;
   height: 48px;
 }
+

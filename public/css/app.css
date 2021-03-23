@@ -10002,3 +10002,15 @@ h3 {
     border-color: #dee2e6;
   }
 }
+
+svg {
+  color: #275D8C;
+}
+
+.stat {
+  background: #e0eafc;
+  border-radius: 50%;
+  padding: .75rem;
+  width: 48px;
+  height: 48px;
+}

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="container">
-        <h3 style="text-align: center">Visualizar categoria</h3>
+        <h3 style="text-align: center">Editar categoria</h3>
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <form action="{{route('categorias.update', $categoria->id)}}" method="post">

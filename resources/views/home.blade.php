@@ -122,23 +122,23 @@
                     <ul class="timeline">
                         <li class="timeline-item">
                             <strong>Motorista João irá entregar o pedido #4356 ao cliente Maurício</strong>
-                            <span class="float-right text-muted text-sm">30m ago</span>
+                            <span class="float-right text-muted text-sm">30m atrás</span>
                             <p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris...</p>
                         </li>
                         <li class="timeline-item">
                             <strong>Novos funcionários foram contratados</strong>
-                            <span class="float-right text-muted text-sm">2h ago</span>
+                            <span class="float-right text-muted text-sm">2h atrás</span>
                             <p>Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum
                                 nunc...</p>
                         </li>
                         <li class="timeline-item">
                             <strong>Novos produtos foram criados</strong>
-                            <span class="float-right text-muted text-sm">3h ago</span>
+                            <span class="float-right text-muted text-sm">3h atrás</span>
                             <p>Curabitur ligula sapien, tincidunt non, euismod vitae, posuere imperdiet, leo. Maecenas malesuada...</p>
                         </li>
                         <li class="timeline-item">
                             <strong>O armazém JF está quase sem estoque do produto Folha A4</strong>
-                            <span class="float-right text-muted text-sm">30m ago</span>
+                            <span class="float-right text-muted text-sm">4h atrás</span>
                             <p>Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum...</p>
                         </li>
                     </ul>

@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
+use App\Models\Produto;
 use Illuminate\Http\Request;
 
 class ProdutoController extends Controller
@@ -13,7 +15,8 @@ class ProdutoController extends Controller
      */
     public function index()
     {
-        //
+        $produtos = Produto::all();
+        return view('produtos.produtos', compact('produtos'));
     }
 
     /**
@@ -23,7 +26,8 @@ class ProdutoController extends Controller
      */
     public function create()
     {
-        //
+        $categorias = Categoria::all();
+        return view('produtos.produtos_create', compact('categorias'));
     }
 
     /**
@@ -34,7 +38,8 @@ class ProdutoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Produto::create($request->all());
+        return redirect()->route('produtos.index');
     }
 
     /**
@@ -45,7 +50,8 @@ class ProdutoController extends Controller
      */
     public function show($id)
     {
-        //
+        $produto = Produto::findOrFail($id);
+        return view('produtos.produtos_show', compact('produto'));
     }
 
     /**
@@ -56,7 +62,9 @@ class ProdutoController extends Controller
      */
     public function edit($id)
     {
-        //
+        $produto = Produto::findOrFail($id);
+        $categorias = Categoria::all();
+        return view('produtos.produtos_edit', compact('produto', 'categorias'));
     }
 
     /**
@@ -68,7 +76,8 @@ class ProdutoController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        Produto::findOrFail($id)->update($request->all());
+        return redirect()->route('produtos.index');
     }
 
     /**
@@ -79,6 +88,18 @@ class ProdutoController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Produto::findOrFail($id)->delete();
+        return redirect()->route('produtos.index');
+    }
+
+    /**
+     * Search's for the given name on the database
+     * @param Request $request
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function search(Request $request)
+    {
+        $produtos = Produto::where('nome','Like',  '%' .$request->text. '%')->get();
+        return view('produtos.produtos', compact('produtos'));
     }
 }
